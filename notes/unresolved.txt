@@ -1,0 +1,66 @@
+# Symbols no library, runtime or megatouch-host provides (2026-10-07)
+# megatouch-host loads the game with RTLD_NOW, so each of these must be defined
+# (usually in src/host/loader_services.cpp) before the game will start.
+# symbol | needed by
+GetLocation(unsigned char, char (&) [255]) | pepixmix.so
+SeniorsHelp(int, bool) | pepixmix.so
+megaend() | pepixmix.so
+megastart(char const*, app_common::args_t*) | pepixmix.so
+VideoClass::Box(int, int, int, int) | pepixmix.so
+WorldClass::PlayMovie(int, unsigned long, void (*)(unsigned char), unsigned char, bool, bool, bool, bool) | pepixmix.so
+WorldClass::WorldClass() | pepixmix.so
+db_gamedata::gamedata_record::gamedata_record(db_gamedata::gamedata_record const&) | pepixmix.so
+db_gamedata::gamedata_record::gamedata_record() | pepixmix.so
+db_gamedata::gamedata_record::~gamedata_record() | pepixmix.so
+xml_gameinfo::enum_GameIds_tag(xml_gameinfo::GameIds, bool) | libcontent.so
+ChainRestClass::GetPicFileName(xml_gameinfo::GameIds, int) | pepixmix.so
+xml_gamerandom::GameSettingsPixMix_record::AdjustTime(int, long) | pepixmix.so
+xml_gamerandom::GameSettingsPixMix_record::copy(abstract_record const*) | pepixmix.so
+xml_gamerandom::GameSettingsPixMix_record::AddChild(abstract_xml_record*, char const*, unsigned int) | pepixmix.so
+xml_gamerandom::GameSettingsPixMix_record::NewChild(char*) | pepixmix.so
+xml_gamerandom::GameSettingsPixMix_record::GameSettingsPixMix_record() | pepixmix.so
+xml_gamerandom::GameSettingsPixMix_record::~GameSettingsPixMix_record() | pepixmix.so
+RandomizedArrayClass::SetBookMark(unsigned char) | pepixmix.so
+RandomizedArrayClass::GetNextValue(int) | pepixmix.so
+RandomizedArrayClass::GotoBookMark(unsigned char) | pepixmix.so
+RandomizedArrayClass::RandomizedArrayClass(xml_gamerandom::PICRAND_record*, int, unsigned char, unsigned short*) | pepixmix.so
+RandomizedArrayClass::~RandomizedArrayClass() | pepixmix.so
+Bitmap::CopyFromScreen(int, int, bool) | pepixmix.so
+Bitmap::CreateSmackTextBox(char const*, FontBase*, signed char, unsigned short, unsigned short, bool) | pepixmix.so
+Bitmap::CreateColoredTextBoxTTF(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | pepixmix.so
+Bitmap::CreateColoredTextBoxTTFS(char const*, int, int, int, int, int, int, int, int, int, bool, char*, int) | pepixmix.so
+Bitmap::Clear() | pepixmix.so
+Bitmap::Colorize(int, int, int) | pepixmix.so
+Bitmap::LoadJPEG(char*, int, int, unsigned char) | pepixmix.so
+Bitmap::LoadSmack(char*, unsigned char, unsigned char) | pepixmix.so
+Bitmap::ScaleInto(Bitmap*, int, int, unsigned char) | pepixmix.so
+Settings::Init() | libcontent.so
+Settings::Init() | pepixmix.so
+Settings::Load() | libcontent.so
+Settings::Load() | pepixmix.so
+Settings::Cleanup() | libcontent.so
+Settings::Cleanup() | pepixmix.so
+Settings::Restore(abstract_xml_record const*) | libcontent.so
+Settings::Restore(abstract_xml_record const*) | pepixmix.so
+Settings::SaveNow() | libcontent.so
+Settings::Settings(char const*, unsigned int) | libcontent.so
+Settings::Settings(char const*, unsigned int) | pepixmix.so
+Settings::~Settings() | libcontent.so
+Settings::~Settings() | pepixmix.so
+TextUtils::VPatch(char*, int, char const*, char const*, ...) | pepixmix.so
+xml_gamerandom::GameSettingsPixMix_record::ChildCount() const | pepixmix.so
+xml_gamerandom::GameSettingsPixMix_record::GetChildren() const | pepixmix.so
+xml_gamerandom::GameSettingsPixMix_record::cTag() const | pepixmix.so
+xml_gamerandom::GameSettingsPixMix_record::eTag() const | pepixmix.so
+xml_gamerandom::GameSettingsPixMix_record::clone() const | pepixmix.so
+xml_gamerandom::GameSettingsPixMix_record::equal(abstract_record const*) const | pepixmix.so
+xml_gamerandom::GameSettingsPixMix_record::Metadata() const | pepixmix.so
+xml_gamerandom::GameSettingsPixMix_record::ChildName(int) const | pepixmix.so
+xml_gamerandom::GameSettingsPixMix_record::not_equal(abstract_record const*) const | pepixmix.so
+Settings::Key(unsigned int, bool) const | libcontent.so
+Settings::Key(unsigned int, bool) const | pepixmix.so
+typeinfo for Settings | libcontent.so
+typeinfo for Settings | pepixmix.so
+typeinfo for xml_gamerandom::GameSettingsPixMix_record | pepixmix.so
+vtable for DOSLinuxWorld | pepixmix.so
+set_mouse_sprite | pepixmix.so
